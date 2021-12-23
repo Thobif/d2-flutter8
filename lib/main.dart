@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +16,7 @@ void main() {
         backgroundColor: Colors.purple,
       ),
       body: Center(
-        child: Text("MyApp"),
+        child: Image.asset("assets/images/solo.png"),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text("Click"),
