@@ -6,7 +6,10 @@ void main() {
     debugShowCheckedModeBanner: false,
     home: Scaffold(
       appBar: AppBar(
-        title: Text("วิทยาลัยเทคนิคตราด", ),
+        title: Text(
+          "เทคโนโลยีสารสนเทศ",
+          style: TextStyle(fontFamily:"Sarabun",color: Colors.white,fontSize:23.0),
+        ),
         centerTitle: true,
         backgroundColor: Colors.purple,
       ),
@@ -14,17 +17,16 @@ void main() {
         child: Text("MyApp"),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Text("Click",),
-        onPressed: () => {
-          print("You Click Me"),
-        },
+        child: Text("Click"),
+        onPressed: () => print("You Click Me"),
+        backgroundColor: Colors.purple,
       ),
       bottomNavigationBar: BottomAppBar(
         child: Container(
           child: Center(
             child: Text(
               "วิทยาลัยเทคนิคตราด",
-              style: TextStyle(color: Colors.white,fontSize: 23.0),
+              style: TextStyle(color: Colors.white, fontSize: 23.0),
             ),
           ),
           height: 40.0,
